@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Mail } from 'lucide-react';
+import { Download, Mail } from 'lucide-react';
 import { GlassCard } from '../effects/GlassCard';
 import { GradientText } from '../effects/AnimatedText';
 import { GlowOrb } from '../effects/GlowOrb';
@@ -103,8 +103,8 @@ export function HeroSection() {
               </motion.button>
               
               <motion.a
-                href="/Resume.pdf"
-                download="Mathayil_Alotaibi_Resume.pdf"
+                href="/MATHAYIL ALOTAIBI.CV.pdf"
+                download="MATHAYIL ALOTAIBI.CV.pdf"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl glass-card text-white font-medium hover:bg-white/10 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -147,24 +147,6 @@ export function HeroSection() {
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
-      >
-        <motion.button
-          onClick={() => scrollToSection('#about')}
-          className="flex flex-col items-center gap-2 text-white/40 hover:text-white/80 transition-colors"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <span className="text-sm">{t.hero.scrollDown}</span>
-          <ArrowDown className="w-5 h-5" />
-        </motion.button>
-      </motion.div>
     </section>
   );
 }
