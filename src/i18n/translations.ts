@@ -16,7 +16,7 @@ export const translations = {
       badge: 'متاحة للعمل',
       title: 'مثايل العتيبي',
       subtitle: 'Computer Engineer · AI Engineer',
-      description: 'حوّل التعقيد الهندسي إلى أنظمة ذكاء اصطناعي متكاملة — تُمكّن قرارات أذكى وتُحدث أثرًا ملموسًا.',
+      description: 'أحوّل التعقيد الهندسي إلى أنظمة ذكاء اصطناعي متكاملة — تُمكّن قرارات أذكى وتُحدث أثرًا ملموسًا.',
       contactBtn: 'تواصل معي',
       downloadCv: 'تحميل السيرة الذاتية',
       scrollDown: 'اسحب للأسفل',
