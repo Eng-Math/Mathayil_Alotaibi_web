@@ -12,14 +12,6 @@ import {
 import { useLanguage } from '../../contexts/LanguageContext';
 import { translations } from '../../i18n/translations';
 
-interface SkillCategory {
-  title: string;
-  titleEn: string;
-  icon: any;
-  color: 'cyan' | 'violet' | 'pink' | 'emerald';
-  skills: string[];
-}
-
 const getSkillCategories = (lang: string) => [
   {
     title: lang === 'ar' ? 'الذكاء الاصطناعي' : 'AI & Machine Learning',
@@ -103,7 +95,7 @@ function SkillTag({ name, color, index }: { name: string; color: string; index: 
 }
 
 export function SkillsSection() {
-  const { language, dir } = useLanguage();
+  const { language, dir: _dir } = useLanguage();
   const t = translations[language];
   const skillCategories = getSkillCategories(language);
 

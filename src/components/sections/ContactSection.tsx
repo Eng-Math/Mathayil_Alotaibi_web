@@ -8,7 +8,7 @@ import { Send, Mail, MapPin, Phone, Linkedin, Github, MessageCircle, CheckCircle
 import { useLanguage } from '../../contexts/LanguageContext';
 import { translations } from '../../i18n/translations';
 
-const getContactInfo = (t: any, lang: string) => [
+const getContactInfo = (t: any, _lang: string) => [
   {
     icon: Mail,
     label: t.contact.info.email,
@@ -46,7 +46,7 @@ const colorMap = {
 };
 
 export function ContactSection() {
-  const { language, dir } = useLanguage();
+  const { language, dir: _dir } = useLanguage();
   const t = translations[language];
   const contactInfo = getContactInfo(t, language);
 

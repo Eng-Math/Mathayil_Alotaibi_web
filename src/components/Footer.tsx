@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../i18n/translations';
 
 export function Footer() {
-  const { language, dir } = useLanguage();
+  const { language, dir: _dir } = useLanguage();
   const t = translations[language];
   
   const scrollToTop = () => {
