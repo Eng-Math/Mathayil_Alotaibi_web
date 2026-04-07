@@ -174,19 +174,19 @@ export function AIBrainVisualizer() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none p-4">
         <div className="relative logo-glitch-container w-full h-full max-w-[90%] max-h-[90%]">
           <img 
-            src="/logo.png" 
+            src="/logo2.png" 
             alt="Logo" 
             className="w-full h-full object-contain opacity-90 logo-glitch"
           />
           {/* Glitch layers */}
           <img 
-            src="/logo.png" 
+            src="/logo2.png" 
             alt="" 
             className="absolute inset-0 w-full h-full object-contain opacity-0 logo-glitch-red"
             aria-hidden="true"
           />
           <img 
-            src="/logo.png" 
+            src="/logo2.png" 
             alt="" 
             className="absolute inset-0 w-full h-full object-contain opacity-0 logo-glitch-blue"
             aria-hidden="true"

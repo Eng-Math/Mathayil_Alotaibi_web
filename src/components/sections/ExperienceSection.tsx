@@ -246,18 +246,20 @@ export function ExperienceSection({ onOpenDoc }: ExperienceProps) {
                       </p>
 
                       {experience.documentUrl && (
-                        <motion.a
-                          href={experience.documentUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <motion.button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (onOpenDoc) {
+                              onOpenDoc(experience.documentUrl!);
+                            }
+                          }}
                           className={`mt-4 w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl ${colors.bg} ${colors.text} border ${colors.border} font-semibold text-sm hover:shadow-lg transition-all duration-300`}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
-                          onClick={(e) => e.stopPropagation()}
                         >
                           <Shield className="w-4 h-4" />
                           {t.experience.viewCertificate}
-                        </motion.a>
+                        </motion.button>
                       )}
                     </GlassCard>
                   </div>
