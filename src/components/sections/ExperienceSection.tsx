@@ -81,7 +81,7 @@ const getExperiences = (lang: string): Experience[] => [
       ? 'معسكر مكثف في هندسة الذكاء الاصطناعي التوليدي شمل بناء الوكلاء الذكيين وأنظمة RAG والنماذج اللغوية الضخمة.'
       : 'An intensive bootcamp in Generative AI Engineering that included building intelligent agents, RAG systems, and large language models.',
     color: 'emerald',
-    documentUrl: '/Mathayil%20Fahad%20Alotaibi.pdf',
+    documentUrl: '/certificates/Mathayil%20Fahad%20Alotaibi.pdf',
   },
 ];
 
