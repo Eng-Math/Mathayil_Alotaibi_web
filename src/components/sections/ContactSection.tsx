@@ -12,15 +12,15 @@ const getContactInfo = (t: any, _lang: string) => [
   {
     icon: Mail,
     label: t.contact.info.email,
-    value: 'mathayil.al.otaibi@gmail.com',
-    href: 'mailto:mathayil.al.otaibi@gmail.com',
+    value: 'Mathayil.alj@gmail.com',
+    href: 'mailto:Mathayil.alj@gmail.com',
     color: 'cyan',
   },
   {
     icon: Phone,
     label: t.contact.info.phone,
-    value: '+966 50 123 4567',
-    href: 'tel:+966501234567',
+    value: '+966 55 525 7509',
+    href: 'tel:+966555257509',
     color: 'violet',
   },
   {
