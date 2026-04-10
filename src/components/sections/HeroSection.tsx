@@ -103,8 +103,8 @@ export function HeroSection() {
               </motion.button>
               
               <motion.a
-                href="/MATHAYIL ALOTAIBI.CV.pdf"
-                download="MATHAYIL ALOTAIBI.CV.pdf"
+                href="/MATHAYIL ALOTAIBI.Cv.pdf"
+                download="MATHAYIL ALOTAIBI.Cv.pdf"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl glass-card text-white font-medium hover:bg-white/10 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
